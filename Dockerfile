@@ -10,6 +10,8 @@ RUN apt-get -q update && \
     rm -rf /var/lib/apt/lists/* &&\
     rm -rf /tmp/*
 
+RUN apt-get -q update && apt-get install -y python-lxml python3-lxml
+
 VOLUME ["/config", "/data"]
 
 ADD ./start.sh /start.sh
