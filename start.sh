@@ -1,6 +1,6 @@
 #! /bin/sh
 
-while true; do sleep 1 && ping -c1 www.google.com > /dev/null && break; done
+while true; do sleep 1 && ping -c1 www.google.com > /dev/null && break; done || true
 
 cd /CouchPotatoServer
 touch /config/CouchPotato.cfg
